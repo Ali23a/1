@@ -38,3 +38,25 @@ create table name (
 show tables;
 show columns from tablesname;
 --tablesname is table name
+
+--example
+create table users (
+    -> id int NOT NULL DEFAULT 0,
+    -> name varchar(50) DEFAULT 'yourname',
+    -> email varchar(150) NOT NULL,
+    -> password varchar(200) NOT NULL );
++----------+--------------+------+-----+----------+-------+
+| Field    | Type         | Null | Key | Default  | Extra |
++----------+--------------+------+-----+----------+-------+
+| id       | int(11)      | NO   |     | 0        |       |
+| name     | varchar(50)  | YES  |     | yourname |       |
+| email    | varchar(150) | NO   |     | NULL     |       |
+| password | varchar(200) | NO   |     | NULL     |       |
++----------+--------------+------+-----+----------+-------+
+
+--how to add data in the table
+
+insert into users (id , name , email ,password)
+->values
+->(1, '' ,'' , '')
+->;
