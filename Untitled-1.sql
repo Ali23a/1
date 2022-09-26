@@ -60,3 +60,16 @@ insert into users (id , name , email ,password)
 ->values
 ->(1, '' ,'' , '')
 ->;
+
+
+--how to delet a table or database;
+drop table name;
+
+--primary key
+create table users (
+    -> id int NOT NULL DEFAULT 0,
+    -> name varchar(50) DEFAULT 'yourname',
+    -> email varchar(150) NOT NULL,
+    -> password varchar(200) NOT NULL 
+    -> primary Key (ID)
+    );
