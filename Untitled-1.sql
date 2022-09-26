@@ -22,7 +22,19 @@ create database name;
 --first u must select your database
 use database;
 
-create table name ;
+create table name (
+    id int,
+    name varchar(50),
+    email varchar(150),
+    password varchar(200),
+
+
+) ;
 
 --name is your table name
 
+--database table informations
+
+show tables;
+show columns from tablesname;
+--tablesname is table name
