@@ -73,3 +73,7 @@ create table users (
     -> password varchar(200) NOT NULL 
     -> primary Key (ID)
     );
+
+    --مقدار دهی اتوماتیک id
+
+AUTO_INCREMENT;
