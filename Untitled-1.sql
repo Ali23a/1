@@ -77,3 +77,13 @@ create table users (
     --مقدار دهی اتوماتیک id
 
 AUTO_INCREMENT;
+
+    --edit and adding to tables 
+
+    alter table users 
+    -> add (name of column in table ) boolean DEFAULT 0;
+
+    --changing places of a cloumn
+     alter table users 
+    -> add (name of column in table ) boolean DEFAULT 0
+    -> first , after (a column);
