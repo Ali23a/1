@@ -77,3 +77,50 @@ create table users (
     --مقدار دهی اتوماتیک id
 
 AUTO_INCREMENT;
+
+    --edit and adding to tables 
+
+    alter table users 
+    -> add (name of column in table ) boolean DEFAULT 0;
+
+    --changing places of a cloumn
+     alter table users 
+    -> add (name of column in table ) boolean DEFAULT 0
+    -> first , after (a column);
+--example 
+
+show columns from users;
+
++----------+--------------+------+-----+----------+-------+
+| Field    | Type         | Null | Key | Default  | Extra |
++----------+--------------+------+-----+----------+-------+
+| id       | int(11)      | NO   |     | 0        |       |
+| name     | varchar(50)  | YES  |     | yourname |       |
+| email    | varchar(150) | NO   |     | NULL     |       |
+| password | varchar(200) | NO   |     | NULL     |       |
++----------+--------------+------+-----+----------+-------+
+
+
+alter table users 
+    -> add is_admin boolean DEFAULT 0,
+    -> add about varchar(10) NULL after name;
+
+    +----------+--------------+------+-----+----------+-------+
+| Field    | Type         | Null | Key | Default  | Extra |
++----------+--------------+------+-----+----------+-------+
+| id       | int(11)      | NO   |     | 0        |       |
+| name     | varchar(50)  | YES  |     | yourname |       |
+| about    | varchar(10)  | YES  |     | NULL     |       |
+| email    | varchar(150) | NO   |     | NULL     |       |
+| password | varchar(200) | NO   |     | NULL     |       |
+| is_admin | tinyint(1)   | YES  |     | 0        |       |
++----------+--------------+------+-----+----------+-------+
+
+-- how to edit datas (modify just changes type and columns ajusts)
+    alter table users
+-> modify about varchar(100) after is_admin;
+
+--change (it will change a columns field name )
+--rename will change a table name 
+    alter table users;
+rename to test;
