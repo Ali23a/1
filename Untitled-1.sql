@@ -87,6 +87,7 @@ AUTO_INCREMENT;
      alter table users 
     -> add (name of column in table ) boolean DEFAULT 0
     -> first , after (a column);
+<<<<<<< HEAD
 --example 
 
 show columns from users;
@@ -124,3 +125,5 @@ alter table users
 --rename will change a table name 
     alter table users;
 rename to test;
+=======
+>>>>>>> 3f377bec2bc9d70a9e1e0a7b3f15508e973a2600
