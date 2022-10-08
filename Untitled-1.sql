@@ -127,3 +127,10 @@ alter table users
 rename to test;
 =======
 >>>>>>> 3f377bec2bc9d70a9e1e0a7b3f15508e973a2600
+--how to get information from database?
+--we use SELECT;
+ 
+select id,name,email from (databasename);
+--you can use (*) to get all information 
+
+select * from (databasename);
